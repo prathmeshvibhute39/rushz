@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Template: replace /PATH/TO/rushz and YOUR-IPHONE-UDID, copy to ~/Library/LaunchAgents/, then launchctl load it. -->
+    <key>Label</key><string>com.example.rushz.renew</string>
+    <key>ProgramArguments</key><array><string>/bin/bash</string><string>/PATH/TO/rushz/scripts/renew.sh</string></array>
+    <key>EnvironmentVariables</key><dict><key>RUSHZ_DEVICE_UDID</key><string>YOUR-IPHONE-UDID</string></dict>
+    <key>StartInterval</key><integer>21600</integer>
+    <key>RunAtLoad</key><true/>
+    <key>ProcessType</key><string>Standard</string>
+</dict>
+</plist>
